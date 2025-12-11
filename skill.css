@@ -24,3 +24,9 @@ body {
 .kk {
 	line-height: 25px;
 }
+.m {
+	color: #ddd;
+	text-decoration: none;
+	font-size: 16;
+	transition: 0.3s;
+}
