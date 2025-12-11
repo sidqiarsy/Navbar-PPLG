@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas RevoU</title>
+    <link rel="stylesheet" href="refou css.css">
+</head>
+<body>
+
+    <div class="sidqi">
+        <h1>To-Do List</h1>
+
+        <div class="ok">
+            <input type="text" id="taskInput" placeholder="Tambahkan tugas...">
+            <button onclick="add()">Simpan</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+        function add() {
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value;
+
+    if (taskText === "") return;
+
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+        ${taskText}
+        <button onclick="completeTask(this)">Selesai</button>
+    `;
+
+    document.getElementById("taskList").appendChild(li);
+    taskInput.value = "";
+}
+
+function completeTask(button) {
+    const li = button.parentElement;
+    li.classList.toggle("done");
+}
+
+    </script>
+   
+</body>
+</html>

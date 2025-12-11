@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.pr{
+	background-color: white;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px;
+	width: 300px;
+	text-align: center;
+	color: black;
+}
+
+.info-label {
+	width: 120px;
+	display:inline-block;
+	color: black;
+}
+
+
+.kk {
+	line-height: 25px;
+}
